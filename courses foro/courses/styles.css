@@ -1,0 +1,237 @@
+/* Reset */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+:root {
+    --clr-primary-700: #05445e;
+    --clr-primary-400: #189ab4;
+    --clr-primary-300: #75e6da;
+    --clr-primary-100: #d4f1f4;
+    --clr-body: #000000;
+    --ff-body: 'Raleway', sans-serif;
+
+    /* Spaces */
+    --space-1: 10px;
+    --space-2: 20px;
+    --space-3: 30px;
+    --space-4: 40px;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 6vw, 3.6rem);
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 2.8rem)z;
+}
+
+h3 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+h4 {
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+}
+
+h5,
+p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+ul {
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1400px;
+    max-width: 90%;
+}
+
+body {
+    background-color: var(--clr-body);
+    color: var(--clr-primary-100);
+}
+
+main{
+    width: 70%;
+    height: 100vh;
+    margin: auto;
+}
+
+.cont_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.cont_buttom_go_course{
+    display: flex;
+    align-self: flex-end;
+}
+.button_go_course{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: var(--space-2);
+    border: solid 1px var(--clr-primary-400);
+    color: #d4f1f4;
+}
+
+.button_go_course:hover{
+    background-color: #189ab4;
+}
+
+.button_sections_foro{
+    width: 150px;
+    height: 30px;
+    background-color: #000000;
+    color: #d4f1f4;
+    border-radius: var(--space-1);
+    border: solid 1px var(--clr-primary-400);
+}
+
+.button_sections_foro:hover{
+    background-color: var(--clr-primary-400);
+}
+
+.cont_buttons{
+    padding-bottom: 10px;
+}
+
+.box_comments{
+    background-color: var(--clr-body);
+    border-radius: var(--space-2);
+}
+
+.bar_nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button_user{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px var(--clr-primary-400);
+    border-radius: var(--space-3);
+    color: var(--clr-primary-100);
+    height: 40px;
+    padding: var(--space-1);
+}
+
+.button_user:hover{
+    background-color: var(--clr-primary-400);
+}
+
+.title_comments{
+    padding-top: 10px;
+    margin: 0%;
+}
+
+.title_question{
+    margin: 0%;
+}
+
+.img_profile{
+    border-radius: 50px;
+    background-color: var(--clr-body);
+    border: solid 1px var(--clr-primary-400);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_commit{
+    border-radius: var(--space-2);
+    border: solid 1px var(--clr-primary-400);
+    height: 300px;
+    width: 100%;
+}
+
+.box_comments{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 15px;
+}
+
+.commit_area{
+    width: 100%;
+    height:100px;
+    padding: 10px;
+    border-radius: var(--space-2);
+    border: solid 3px var(--clr-primary-400);
+    resize: none;
+}
+
+.autor_date{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.autor{
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.section_commits{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    gap: 10px;
+}
+
+.button_response {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-body);
+    color: #d4f1f4;
+    border: solid 1px var(--clr-primary-400);
+    border-radius: var(--space-2);
+    width: 150px;
+    height: 40px;
+    text-decoration: none;
+}
+
+.button_response:hover {
+    background-color: var(--clr-primary-400);
+}
+
+#large{
+    display: block;
+}
+#short{
+    display: none;
+}
+@media only screen and (max-width:600px){
+    #large{
+        display: none;
+    }
+    #short{
+        display: block;
+    }
+    #title_user{
+        display: none;
+    }
+}

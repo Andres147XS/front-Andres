@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/courses /styles.css">
+    <link rel="icon" href="/img/Untitled.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Magic Academy</title>
+</head>
+<body>
+    <header>
+        <div class="bar_nav">
+            <img src="/courses foro/img/Logo_MagicAcademy_White.png" alt="" id="large">
+            <img src="/courses foro/img/Logo_MagicAcademy_Short.png" alt="" id="short">
+            <a href="" class="button_user">
+                <img src="/courses foro/svg/user3.svg" alt="">
+                <h4 id="title_user">User</h4>
+            </a>
+        </div>
+        <div class="course_name">
+            <h2>Nombre del curso</h2>
+        </div>
+    </header>
+    <main class="grid_main">
+        <div class="section_one">
+            <button onclick="dropDown('dropdown1')" class="dropDown_cont">
+                Seccion 1 <img class="dropdownIcon" src="/courses foro/svg/dropDown.svg" alt="">
+            </button>
+            <div id="dropdown1" class="dropdown-content" style="display: none;">
+                <div class="drop_list">
+                    <a class="anchor" href="#"><img class="book_size" src="/courses foro/svg/book.svg" alt="">Título de Clase 1</a>
+                    <a class="anchor" href="#"><img class="book_size" src="/courses foro/svg/book.svg" alt="">Título de Clase 2</a>
+                    <a class="anchor" href="#"><img class="book_size" src="/courses foro/svg/book.svg" alt="">Título de Clase 3</a>
+                </div>
+            </div>
+            <button onclick="dropDown('dropdown2')" class="dropDown_cont">
+                Seccion 2 <img class="dropdownIcon" src="/courses foro/svg/dropDown.svg" alt="">
+            </button>
+            <div id="dropdown2" class="dropdown-content" style = "display: none;">
+                <div class="drop_list">
+                    <a class="anchor" href="#"><img class="book_size" src="/courses foro/svg/book.svg" alt="">Título de Clase 1</a>
+                    <a class="anchor" href="#"><img class="book_size" src="/courses foro/svg/book.svg" alt="">Título de Clase 2</a>
+                    <a class="anchor" href="#"><img class="book_size" src="/courses foro/svg/book.svg" alt="">Título de Clase 3</a>
+                </div>            </div>
+            <button onclick="dropDown('dropdown3')" class="dropDown_cont">
+                Seccion 3 <img class="dropdownIcon" src="/courses foro/svg/dropDown.svg" alt="">
+            </button>
+            <div id="dropdown3" class="dropdown-content" style = "display: none;">
+                <div class="drop_list">
+                    <a class="anchor" href="#"><img class="book_size" src="/courses foro/svg/book.svg" alt="">Título de Clase 1</a>
+                    <a class="anchor" href="#"><img class="book_size" src="/courses foro/svg/book.svg" alt="">Título de Clase 2</a>
+                    <a class="anchor" href="#"><img class="book_size" src="/courses foro/svg/book.svg" alt="">Título de Clase 3</a>
+                </div>
+            </div>
+        </div>
+        <div class="section_two">
+            <h1>Class content viewer</h1>
+        </div>
+        <div class="section_three">
+            <h3>Comentarios clase</h3>
+            <div class="boxComment">
+                <div class="autor_date">
+                    <div class="img_profile">
+                        <h4>A</h4>
+                    </div>
+                    <h5 class="autor">Autor</h5>
+                    <h5>Fecha y hora</h5>
+                </div>
+                <div class="section_commits">
+                    <h4 class="title_question">Titulo pregunta</h4>
+                    <textarea class="commit_area" name="" id="" cols="30" rows="10"></textarea>
+                    <a href="" class="button_response">Responder</a>
+                </div>
+            </div>
+            <div class="boxComment">
+                <div class="autor_date">
+                    <div class="img_profile">
+                        <h4>A</h4>
+                    </div>
+                    <h5 class="autor">Autor</h5>
+                    <h5>Fecha y hora</h5>
+                </div>
+                <div class="section_commits">
+                    <h4 class="title_question">Titulo pregunta</h4>
+                    <textarea class="commit_area" name="" id="" cols="30" rows="10"></textarea>
+                    <a href="" class="button_response">Responder</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="/app.js"></script>
+</html>
